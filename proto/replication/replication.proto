@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package replication;
+
+option go_package = "github.com/adhikareeprayush/kv-store/proto/replication";
+
+// Service Definition
+
+service Replication {
+  rpc Replicate(ReplicateRequest) returns (ReplicateResponse);
+}
+
+// Shared Types
+
+message HLCTimestamp {
+  int64 wall_time = 1; // nanoseconds since Unix epoch
+  int32 logical   = 2; // tie-breaking counter
+}
+
+// Replicate
+
+message ReplicateRequest {
+  string              key       = 1;
+  bytes               value     = 2;
+  HLCTimestamp        timestamp = 3;
+  repeated Dependency deps      = 4; // empty in eventual mode, populated in causal mode
+}
+
+message Dependency {
+  string       key    = 1; // the key this write causally depends on
+  HLCTimestamp min_ts = 2; // the minimum timestamp that key must be at before this write can apply
+}
+
+message ReplicateResponse {
+  bool success = 1; // true if the write was accepted and applied (or buffered in causal mode)
+}

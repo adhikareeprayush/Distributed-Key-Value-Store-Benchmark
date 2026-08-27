@@ -1,0 +1,15 @@
+ok  	github.com/adhikareeprayush/kv-store/bench	0.024s
+?   	github.com/adhikareeprayush/kv-store/cmd/bench	[no test files]
+?   	github.com/adhikareeprayush/kv-store/cmd/checker	[no test files]
+?   	github.com/adhikareeprayush/kv-store/cmd/dashboard	[no test files]
+?   	github.com/adhikareeprayush/kv-store/cmd/experiments	[no test files]
+?   	github.com/adhikareeprayush/kv-store/cmd/node	[no test files]
+ok  	github.com/adhikareeprayush/kv-store/internal/buffer	0.004s
+ok  	github.com/adhikareeprayush/kv-store/internal/checker	0.006s
+?   	github.com/adhikareeprayush/kv-store/internal/experiments	[no test files]
+ok  	github.com/adhikareeprayush/kv-store/internal/hlc	0.005s
+ok  	github.com/adhikareeprayush/kv-store/internal/replication	0.058s
+ok  	github.com/adhikareeprayush/kv-store/internal/server	0.545s
+ok  	github.com/adhikareeprayush/kv-store/internal/store	0.004s
+?   	github.com/adhikareeprayush/kv-store/proto/kv	[no test files]
+?   	github.com/adhikareeprayush/kv-store/proto/replication	[no test files]

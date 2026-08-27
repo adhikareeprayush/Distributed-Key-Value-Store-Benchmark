@@ -1,0 +1,9 @@
+name: smoke
+record_count: 20
+operation_count: 100
+read_proportion: 0.5
+update_proportion: 0.5
+insert_proportion: 0.0
+key_prefix: user
+field_length: 32
+request_distribution: uniform

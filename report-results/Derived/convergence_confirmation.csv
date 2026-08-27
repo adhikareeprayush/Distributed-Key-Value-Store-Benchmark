@@ -1,0 +1,7 @@
+mode,peer_delay_ms,workload,seed,phase,pass,elapsed_ms,keys_checked,settle_limit_ms,overall_timeout_ms
+eventual,5,workload_c,4,immediate,1,1759,1000,10000,60000
+eventual,5,workload_c,4,after_5s,1,849,1000,10000,60000
+strong,5,workload_c,3,immediate,1,739,1000,10000,60000
+strong,5,workload_c,3,after_5s,1,742,1000,10000,60000
+causal,20,workload_a,3,immediate,1,738,1000,10000,60000
+causal,20,workload_a,3,after_5s,1,1173,1000,10000,60000

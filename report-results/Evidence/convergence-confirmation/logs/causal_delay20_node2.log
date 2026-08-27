@@ -1,0 +1,7 @@
+Node starting...
+Mode: causal
+Port: 50052
+Peers: [localhost:50051 localhost:50053]
+Peer delay: 20ms
+Node running. Press Ctrl+C to stop.
+Shutting down.

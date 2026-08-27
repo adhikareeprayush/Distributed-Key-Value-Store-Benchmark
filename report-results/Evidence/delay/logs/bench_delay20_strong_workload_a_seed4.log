@@ -1,0 +1,8 @@
+2026/08/25 23:54:56 running 10000 operations (mode=strong)...
+Benchmark complete
+  mode:       strong
+  workload:   workload_a
+  operations: 10000 (reads=4981 writes=5019 errors=0)
+  throughput: 92.18 ops/s
+  latency p50: 20.934329ms
+  results:    /home/astrocat/Documents/major-mid-term-report/Evidence/kvstore-eval-20260825T233200+0545/delay/benchmark_delay.csv

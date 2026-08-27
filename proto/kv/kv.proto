@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+package kv;
+
+option go_package = "github.com/yourorg/kvstore/proto/kv";
+
+// Service Definition
+
+service KVStore {
+  rpc Put(PutRequest)       returns (PutResponse);
+  rpc Get(GetRequest)       returns (GetResponse);
+  rpc Delete(DeleteRequest) returns (DeleteResponse);
+}
+
+// Shared Types
+
+message HLCTimestamp {
+  int64 wall_time = 1; // nanoseconds since Unix epoch
+  int32 logical   = 2; // tie-breaking counter
+}
+
+// Put
+
+message PutRequest {
+  string key   = 1;
+  bytes  value = 2;
+}
+
+message PutResponse {
+  HLCTimestamp timestamp = 1; // HLC timestamp assigned to this write
+}
+
+// Get
+
+message GetRequest {
+  string key = 1;
+}
+
+message GetResponse {
+  bytes        value     = 1; // empty if key does not exist
+  HLCTimestamp timestamp = 2; // timestamp of the write that produced this value
+  bool         found     = 3; // false if key does not exist
+}
+
+// Delete
+
+message DeleteRequest {
+  string key = 1;
+}
+
+message DeleteResponse {
+  HLCTimestamp timestamp = 1; // HLC timestamp assigned to this deletion
+}

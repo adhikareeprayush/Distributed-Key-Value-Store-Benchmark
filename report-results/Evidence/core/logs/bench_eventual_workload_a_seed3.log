@@ -1,0 +1,9 @@
+2026/08/25 23:31:27 loading 1000 records...
+2026/08/25 23:31:27 running 10000 operations (mode=eventual)...
+Benchmark complete
+  mode:       eventual
+  workload:   workload_a
+  operations: 10000 (reads=4933 writes=5067 errors=0)
+  throughput: 3938.93 ops/s
+  latency p50: 229.01µs
+  results:    /home/astrocat/Documents/major-mid-term-report/Evidence/kvstore-eval-20260825T233200+0545/core/benchmark.csv

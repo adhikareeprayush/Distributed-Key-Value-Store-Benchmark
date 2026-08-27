@@ -1,0 +1,6 @@
+Node starting...
+Mode: causal
+Port: 50053
+Peers: [localhost:50051 localhost:50052]
+Node running. Press Ctrl+C to stop.
+Shutting down.

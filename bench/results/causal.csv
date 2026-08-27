@@ -1,0 +1,2 @@
+mode,workload,seed,peer_delay_ms,operations,reads,writes,errors,duration_ms,throughput_ops,latency_p50_ns,latency_p95_ns,latency_p99_ns,latency_avg_ns
+causal,workload_a,42,0,10000,5013,4987,0,4070.545,2456.67,383886,560430,717071,400222

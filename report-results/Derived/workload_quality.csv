@@ -1,0 +1,4 @@
+workload,expected_read_pct,actual_read_pct,actual_write_pct,operations,errors
+workload_a,50.0,49.84,50.16,150000,0
+workload_b,95.0,95.15,4.849999999999994,150000,0
+workload_c,100.0,100.0,0.0,150000,0

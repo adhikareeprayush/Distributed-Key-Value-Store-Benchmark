@@ -1,0 +1,8 @@
+2026/08/25 23:47:58 running 10000 operations (mode=causal)...
+Benchmark complete
+  mode:       causal
+  workload:   workload_a
+  operations: 10000 (reads=4999 writes=5001 errors=0)
+  throughput: 3508.80 ops/s
+  latency p50: 254.781µs
+  results:    /home/astrocat/Documents/major-mid-term-report/Evidence/kvstore-eval-20260825T233200+0545/delay/benchmark_delay.csv

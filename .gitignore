@@ -1,0 +1,4 @@
+bin/
+*.test
+report-results/**/__pycache__/
+analysis/__pycache__/
